@@ -1,0 +1,200 @@
+:root {
+    /* Color Palette */
+    --text-primary: #2a1e17; /* Primary text color or primary element color */
+    --text-accent: #f25019; /* Accent color for call-to-actions and active states */
+    --text-white: #fff; /* White color for backgrounds or text */
+    --text-grey: #bcbec0; /* Grey color for secondary text or disabled states */
+
+    /* Backgrounds */
+    --bg-opacity-white: rgba(
+        255,
+        255,
+        255,
+        0.3
+    ); /* Semi-transparent white background */
+    --bg-gradient-peach: linear-gradient(
+        90deg,
+        #fedcc5 0%,
+        #feddc6 100%
+    ); /* Peach gradient background */
+
+    /* Typography */
+    --text-xs: 12px; /* Extra small text */
+    --text-sm: 14px; /* Small text */
+    --text-lg: 20px; /* Large text */
+    --text-xl: 38px; /* Extra large text */
+
+    --font-normal: 400; /* Normal font weight */
+    --font-semibold: 600; /* Semi-bold font weight */
+    --font-bold: 700; /* Bold font weight */
+
+    /* Border and Corner Radius */
+    --rounded-sm: 5px; /* Small border radius for buttons, inputs, etc. */
+    --rounded-lg: 40px; /* Large border radius for containers, cards, etc. */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    background-image:url(../images/banner.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.login h2{
+    font-size:var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+.login{
+    width:400px;
+    background-color:transparent;
+    padding: 30px;
+    margin-left: 40px;
+    color: var(--text-primary);
+    border: 2px solid var(--text-white);
+    box-shadow: 1px 1px 5px var(--text-accent);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.form-row input[type="email"],
+.form-row input[type="password"] {
+    display: block;
+    width:100% ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+.form-row label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.password {
+    position: relative;
+}
+.password img{
+    position: absolute;
+    top:55%;
+    right: 5%;
+}
+.forget a{
+    text-decoration:none;
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+
+.btn button{
+    width: 100%;
+    background-color: var(--text-accent);
+    font-size:0.8rem;
+    color: var(--text-white);
+    font-weight:var(--font-bold);
+    padding: 10px 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.btn button:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    background-color: var(--text-white);
+    color: var(--text-accent);
+    border: 1px solid var(--text-accent);
+}
+.social{
+    text-align: center;
+    font-size: var(--text-lg);
+}
+
+.social .icon{
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+.social .icon a{
+    background-color: var(--text-white);
+    padding: 3px 20px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--text-accent);
+    box-shadow: 1px 1px 5px var(--text-accent);
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    
+}
+.social .icon a:hover{
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+
+
+.social a{
+    color:var(--text-primary);
+    font-weight:var(--font-bold);
+    margin:0 5px;
+    
+}
+.social a:hover{
+    text-decoration: underline;
+}
+
+.social h6{
+    font-weight:var(--font-normal);
+    font-size: var(--text-sm);
+}
+
